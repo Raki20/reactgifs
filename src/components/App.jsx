@@ -10,19 +10,18 @@ const gifs = [
 ];
 class App extends Component {
     constructor (props) {
-        super (props);
-        this.state = {
+        super(props); this.state = {
             selectedGif: "https://media.giphy.com/media/KVVgzFKIlqBqx0OFIw/giphy.gif"
         };
     }
-    render () {
 
+    render () {
         const { selectedGif } = this.state;
-            return (
-        <Fragment>
-            <SelectedGif selectedGif={selectedGif}/>
-                <GifList gifs={gifs}/> 
-                </Fragment>
+        return (
+            <Fragment>
+                <SelectedGif selectedGif={selectedGif} />
+                <GifList gifs={gifs} />
+            </Fragment>
         );
     }
 }

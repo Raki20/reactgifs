@@ -4,7 +4,7 @@ import Gif from './Gif';
 const GifList = ({ gifs }) => (
     <div className="giflist">
         {gifs.map(gif => <Gif src={gif} />)}
-    </div>  
+    </div>
 );
-            
+
 export default GifList;

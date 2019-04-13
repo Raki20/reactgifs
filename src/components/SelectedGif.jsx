@@ -1,9 +1,9 @@
 import React from 'react';
 
 const SelectedGif = ({ selectedGif }) => (
-  <img 
-    src={selectedGif}
-
+    <img
+      src={selectedGif}
+      alt="gif"
     />
 );
 
